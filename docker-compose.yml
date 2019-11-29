@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    links:
+      - mysql
+    ports:
+      - "5000:5000"
+  mysql:
+    image: "mysql:latest"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: found_lost
+      MYSQL_USER: usama
+      MYSQL_PASSWORD: root

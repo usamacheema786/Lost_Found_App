@@ -1,0 +1,9 @@
+itsdangerous
+flask
+flask-Restful
+pyjwt
+flask-sqlalchemy
+werkzeug
+flask-mail
+pymysql
+mysql-client
